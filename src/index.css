@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: var(--background-color);
+  font-family: "Libre Baskerville", serif;
 }
 
 :root {
