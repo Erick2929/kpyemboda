@@ -25,7 +25,7 @@ function Footer() {
       </div>
       <div className={styles.iconAtag}>
         <IconButton
-          href={"https://wa.me/8442895076?text=" + mensaje}
+          href='https://www.instagram.com/desisoftware/'
           target='_blank'
         >
           <Instagram />
