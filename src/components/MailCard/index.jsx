@@ -67,7 +67,7 @@ function MailCard({ isOpen, setIsOpen }) {
         className={styles.openHere}
         onClick={() => setIsOpen(false)}
       >
-        <h1>Click</h1>
+        <h1>Click Aquí</h1>
       </animated.div>
       <animated.div style={wrapper} className={styles.container}></animated.div>
       <animated.div
