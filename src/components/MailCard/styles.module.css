@@ -1,0 +1,40 @@
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  z-index: 10;
+}
+
+.hWrapperContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 11;
+  display: flex;
+  align-items: center;
+}
+.vWrapperContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+}
+
+.horizontalWrapper {
+  width: 100%;
+  height: 60px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.verticalWrapper {
+  height: 100%;
+  width: 60px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
