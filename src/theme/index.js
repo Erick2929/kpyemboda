@@ -1,7 +1,9 @@
 const themeColors = {
-  primary: "#69581b",
+  accent: "#69581b",
+  accentHoverColor: "#453a13",
+  primary: "#F5E9D3",
   secondary: "#f3e4db",
-  background: "f5f5f5",
+  background: "#FFFCFA",
 };
 
 export { themeColors };

@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.container h2 {
+  margin: 10px 0px 10px 0px;
+  color: var(--accent-color);
+}
+
+.container p {
+  color: var(--accent-color);
+  text-align: center;
+  line-height: 182%;
+}
+
+.croquis {
+  height: auto;
+  width: 100%;
+  border-radius: 11px;
+  border: 2px solid var(--secondary-color);
+  box-sizing: border-box;
+}

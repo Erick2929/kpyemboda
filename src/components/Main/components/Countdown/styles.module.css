@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  border-radius: 11px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container h2 {
+  color: var(--accent-color);
+  margin: 5px 5px 20px 5px;
+}
+
+.countdownTimer {
+  color: var(--accent-color);
+}
+
+.countdownTimer span {
+  margin-left: 10px;
+  color: var(--accent-color);
+}

@@ -5,7 +5,9 @@ body {
 }
 
 :root {
-  --primary-color: #69581b;
+  --accent-color: #69581b;
+  --accent-hover-color: #453a13;
+  --primary-color: #f5e9d3;
   --secondary-color: #f3e4db;
-  --background-color: #f5f5f5;
+  --background-color: #fffcfa;
 }

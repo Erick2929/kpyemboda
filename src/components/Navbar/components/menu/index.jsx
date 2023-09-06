@@ -5,6 +5,11 @@ import { IconButton } from "@mui/material";
 import { themeColors } from "../../../../theme";
 import { useState } from "react";
 
+const aTagStyle = {
+  color: themeColors.accent,
+  textDecoration: "none",
+};
+
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -25,7 +30,7 @@ export default function BasicMenu() {
         onClick={handleClick}
       >
         <MenuIcon
-          sx={{ color: themeColors.primary, height: "45px", width: "auto" }}
+          sx={{ color: themeColors.accent, height: "45px", width: "auto" }}
         />
       </IconButton>
       <Menu
@@ -39,15 +44,21 @@ export default function BasicMenu() {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
-        <MenuItem sx={{ color: themeColors.primary }} onClick={handleClose}>
-          Profile
-        </MenuItem>
-        <MenuItem sx={{ color: themeColors.primary }} onClick={handleClose}>
-          My account
-        </MenuItem>
-        <MenuItem sx={{ color: themeColors.primary }} onClick={handleClose}>
-          Logout
-        </MenuItem>
+        <a href='#mapa' style={aTagStyle}>
+          <MenuItem sx={{ color: themeColors.accent }} onClick={handleClose}>
+            Ir al mapa
+          </MenuItem>
+        </a>
+        <a href='#cuando' style={aTagStyle}>
+          <MenuItem sx={{ color: themeColors.accent }} onClick={handleClose}>
+            ¿Donde?
+          </MenuItem>
+        </a>
+        <a href='#cuando' style={aTagStyle}>
+          <MenuItem sx={{ color: themeColors.accent }} onClick={handleClose}>
+            ¿Cuando?
+          </MenuItem>
+        </a>
       </Menu>
     </div>
   );

@@ -1,14 +1,13 @@
 import { Box } from "@mui/material";
 import { themeColors } from "../../theme";
-import MenuButton from "./components/menu";
 import BasicMenu from "./components/menu";
-// import Menu from "./components/menu";
+import logoBoda from "./../../assets/imgs/logoBoda.png";
 
 function Navbar() {
   return (
     <Box
       sx={{
-        height: "50px",
+        height: "60px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -17,7 +16,11 @@ function Navbar() {
       }}
     >
       <Box sx={{ width: "50%" }}>
-        <h2 style={{ color: themeColors.primary }}>KP & EM</h2>
+        <img
+          src={logoBoda}
+          alt='logo-boda'
+          style={{ height: "100px", width: "auto" }}
+        />
       </Box>
       <Box sx={{ width: "50%", display: "flex", justifyContent: "flex-end" }}>
         <BasicMenu />
