@@ -11,6 +11,18 @@ import { isMobile } from "react-device-detect";
 
 function MailCard({ isOpen, setIsOpen }) {
   const width = isMobile ? "600px" : "1930px";
+
+  const openHereApi = useSpringRef();
+  const openHere = useSpring({
+    ref: openHereApi,
+    config: config.stiff,
+    onfig: config.stiff,
+    from: { scale: 1 },
+    to: {
+      scale: !isOpen ? 0 : 1,
+    },
+  });
+
   const springApi = useSpringRef();
   const horizontalWrapper = useSpring({
     ref: springApi,
@@ -20,6 +32,7 @@ function MailCard({ isOpen, setIsOpen }) {
       right: !isOpen ? width : "0px",
     },
   });
+
   const springApi1 = useSpringRef();
   const verticalWrapper = useSpring({
     ref: springApi1,
@@ -29,6 +42,7 @@ function MailCard({ isOpen, setIsOpen }) {
       bottom: !isOpen ? "1100px" : "0px",
     },
   });
+
   const springApi2 = useSpringRef();
   const wrapper = useSpring({
     ref: springApi2,
@@ -40,16 +54,21 @@ function MailCard({ isOpen, setIsOpen }) {
     },
   });
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsOpen(false);
-    }, 2000);
-  }, []);
-
-  useChain([springApi, springApi1, springApi2], [0, 0.3, 0.6], 3000);
+  useChain(
+    [openHereApi, springApi, springApi1, springApi2],
+    [0, 0.3, 0.6, 0.8],
+    3000
+  );
 
   return (
-    <>
+    <div>
+      <animated.div
+        style={openHere}
+        className={styles.openHere}
+        onClick={() => setIsOpen(false)}
+      >
+        <h1>Click</h1>
+      </animated.div>
       <animated.div style={wrapper} className={styles.container}></animated.div>
       <animated.div
         style={horizontalWrapper}
@@ -63,7 +82,7 @@ function MailCard({ isOpen, setIsOpen }) {
       >
         <div className={styles.verticalWrapper}></div>
       </animated.div>
-    </>
+    </div>
   );
 }
 
