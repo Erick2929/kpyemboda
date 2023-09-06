@@ -1,8 +1,10 @@
-import { Box, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { themeColors } from "../../theme";
 import Countdown from "./components/Countdown";
 import Map from "./components/Map";
 import Moodboard from "./components/Moodboard";
+import Gifts from "./components/Gifts";
+import Forms from "./components/Forms";
 
 function Main() {
   return (
@@ -21,15 +23,24 @@ function Main() {
         <Grid item xs={12} md={6}>
           <Map />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "space-evenly",
+            gap: "20px",
+          }}
+          item
+          xs={12}
+          md={6}
+        >
           <Moodboard />
-        </Grid>
-        {/* <Grid item xs={12} md={6}>
-          <Map />
+          <Gifts />
         </Grid>
         <Grid item xs={12} md={6}>
-          <Map />
-        </Grid> */}
+          <Forms />
+        </Grid>
       </Grid>
     </div>
   );

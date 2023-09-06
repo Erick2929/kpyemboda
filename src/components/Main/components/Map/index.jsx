@@ -8,15 +8,15 @@ function Map() {
   return (
     <div
       className={styles.container}
-      style={{
-        backgroundColor: themeColors.secondary,
-        padding: "15px",
-        borderRadius: "11px",
-      }}
+      //   style={{
+      //     backgroundColor: themeColors.secondary,
+      //     padding: "15px",
+      //     borderRadius: "11px",
+      //   }}
       id='mapa'
     >
-      <h2>¿Donde y cuando será?</h2>
-      <p>Hacienda Torecillas a las 20:00 horas</p>
+      <h2>¿Dónde y cuándo será?</h2>
+      <p>Hacienda Torrecillas a las 20:00 horas</p>
       <a
         href='https://goo.gl/maps/wK2Dry1kB4CEhmJi9'
         rel='noreferrer'

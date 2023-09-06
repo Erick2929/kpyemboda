@@ -4,7 +4,7 @@
   align-items: center;
   height: 100%;
   box-sizing: border-box;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .container h2 {

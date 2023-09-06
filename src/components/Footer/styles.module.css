@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  margin-top: 30px;
+}
+
+.iconAtag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconAtag a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: var(--accent-color);
+}

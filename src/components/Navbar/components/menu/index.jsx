@@ -45,17 +45,26 @@ export default function BasicMenu() {
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
         <a href='#mapa' style={aTagStyle}>
-          <MenuItem sx={{ color: themeColors.accent }} onClick={handleClose}>
+          <MenuItem
+            sx={{ color: themeColors.accent, fontFamily: "inherit" }}
+            onClick={handleClose}
+          >
             Ir al mapa
           </MenuItem>
         </a>
         <a href='#cuando' style={aTagStyle}>
-          <MenuItem sx={{ color: themeColors.accent }} onClick={handleClose}>
+          <MenuItem
+            sx={{ color: themeColors.accent, fontFamily: "inherit" }}
+            onClick={handleClose}
+          >
             ¿Donde?
           </MenuItem>
         </a>
         <a href='#cuando' style={aTagStyle}>
-          <MenuItem sx={{ color: themeColors.accent }} onClick={handleClose}>
+          <MenuItem
+            sx={{ color: themeColors.accent, fontFamily: "inherit" }}
+            onClick={handleClose}
+          >
             ¿Cuando?
           </MenuItem>
         </a>
