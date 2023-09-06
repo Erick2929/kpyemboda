@@ -6,7 +6,7 @@ function Footer() {
   const mensaje =
     "Hola, estoy interesado en cotizar un desarrollo. ¿Podrías ayudarme?";
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='footer'>
       <div className={styles.iconAtag}>
         <IconButton
           href={"https://wa.me/8442895076?text=" + mensaje}

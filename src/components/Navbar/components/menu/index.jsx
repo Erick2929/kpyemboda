@@ -68,6 +68,22 @@ export default function BasicMenu() {
             ¿Cuando?
           </MenuItem>
         </a>
+        <a href='#regalos' style={aTagStyle}>
+          <MenuItem
+            sx={{ color: themeColors.accent, fontFamily: "inherit" }}
+            onClick={handleClose}
+          >
+            ¿Regalos?
+          </MenuItem>
+        </a>
+        <a href='#forms' style={aTagStyle}>
+          <MenuItem
+            sx={{ color: themeColors.accent, fontFamily: "inherit" }}
+            onClick={handleClose}
+          >
+            Asistencia
+          </MenuItem>
+        </a>
       </Menu>
     </div>
   );

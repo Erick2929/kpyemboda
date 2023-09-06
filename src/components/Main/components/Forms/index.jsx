@@ -41,7 +41,7 @@ function Forms() {
   };
 
   return (
-    <form className={styles.container} onSubmit={handleEnviar}>
+    <form className={styles.container} onSubmit={handleEnviar} id='forms'>
       <Toaster />
       <h2>Confirmación de asistencia</h2>
       <CssTextField
