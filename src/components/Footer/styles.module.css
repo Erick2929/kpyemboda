@@ -15,7 +15,13 @@
 }
 
 .iconAtag a {
-  margin-left: 5px;
   text-decoration: none;
   color: var(--accent-color);
+  font-size: small;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  border-radius: 11px;
 }
