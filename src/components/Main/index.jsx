@@ -38,7 +38,7 @@ function Main() {
           <Moodboard />
           <Gifts />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12}>
           <Forms />
         </Grid>
       </Grid>

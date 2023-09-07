@@ -27,7 +27,7 @@ const CssTextField = styled(TextField)({
 function Forms() {
   const [nombre, setNombre] = useState("");
   const [apellidos, setApellidos] = useState("");
-  const [cantidadPersonas, setCantidadPersonas] = useState(0);
+  const [cantidadPersonas, setCantidadPersonas] = useState(null);
   const [email, setEmail] = useState("");
 
   const handleEnviar = (e) => {
@@ -37,6 +37,10 @@ function Forms() {
     console.log("Apellidos:", apellidos);
     console.log("Cantidad de personas:", cantidadPersonas);
     console.log("Correo Electrónico:", email);
+    setApellidos("");
+    setCantidadPersonas(null);
+    setEmail("");
+    setNombre("");
     toast.success("RSVP enviada");
   };
 
@@ -65,6 +69,7 @@ function Forms() {
         id='number-of-people'
         label='Cant. de personas'
         variant='standard'
+        value={cantidadPersonas}
         className={styles.input}
         onChange={(e) => setCantidadPersonas(e.target.value)}
       />

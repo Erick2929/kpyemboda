@@ -81,7 +81,7 @@ export default function BasicMenu() {
             sx={{ color: themeColors.accent, fontFamily: "inherit" }}
             onClick={handleClose}
           >
-            Asistencia
+            RSVP
           </MenuItem>
         </a>
       </Menu>
